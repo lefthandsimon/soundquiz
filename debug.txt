@@ -1,0 +1,61 @@
+Call update-model error.
+Error code: 400
+{
+  "message": "The interaction model is not valid.",
+  "violations": [
+    {
+      "message": "model.type.name is unknown slot type name"
+    }
+  ]
+}
+
+
+-------------------- Debug Mode --------------------
+[2017-11-28T16:17:51.414Z] - DEBUG - UPDATE-SKILL
+request-id: ae417c82-d457-11e7-a6c9-4ba7ee3175f9
+PUT https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.547de95c-6e10-4cfd-b0c1-3d094b2e8dec
+status code: 202 Accepted
+
+Request headers: {"User-Agent":"ask-cli/1.0.0-beta.5 Node/v8.9.0","Authorization":"Atza|IwEBIEaGyeu7mCbPwAtOruKIEkOFpLMHiB-pSKa5ubfy_Tm828KMLFDBnVW8eq7Zw5w0imdafYDpH752j-APexkXfxKChO-q6Hy-IkoTvmlsllkPIohb_Pnm7OxA3vrdYxkZGtqYZkAjfopyfIWkxd8uacDyfpsrGtcflELgLcJhlP9zuOrZyb75dY8YTxUJJtZOOBgElMetbIqDRPSYQ0dU4vfBBla2yHt3yLVVbdIbHnYmqkrFLntoScSWdpR4jgDcX8N0vemNO1iTq9x8pZP81LMJNBpLPS-C14wmmU4rr-VdY3kJ9YQaiwCD3Sedg4wWVFkrbKqgFzjdCTjc3A_woZYf_ce1hJfZVbBIQBBjJn4wULao2mrRjH2IUcEgwzyreQBRx7AA8GxPhpKZ7uU5u3ilbZbBVqK9Y0iMkyu3U1VaaddZpWdpas3C1JQcWO78IVe-0CHqteksGgKj6Eu536khbFzgzUiN5hxeGTKhGF3aiHfrKrdxPWIEufxuyT_j4Ad_326QWPF3gVc9BBNQA68wLXV9Z7JbBaIZ0pRqkWCyedBEmHBNzdCf0x7Rngu7Lfaa_611KYP_IoEpQ3X7V_mn4InrHaby_R1Uzj3auIcz9X2KbC1KJGVoe25W3UC7lJ4","accept":"application/json","content-type":"application/json","content-length":570}
+
+Request body: {"skillManifest":{"publishingInformation":{"locales":{"en-US":{"summary":"Sample Short Description","examplePhrases":["Alexa open hello world","Alexa tell hello world I am Jeff","Alexa tell hello world my name is Peter"],"name":"soundquiz","description":"Sample Full Description"}},"isAvailableWorldwide":true,"testingInstructions":"Sample Testing Instructions.","category":"EDUCATION_AND_REFERENCE","distributionCountries":[]},"apis":{"custom":{"endpoint":{"uri":"arn:aws:lambda:us-east-1:647147464814:function:ask-custom-soundquiz-default"}}},"manifestVersion":"1.0"}}
+
+Response headers: {"server":"Server","date":"Tue, 28 Nov 2017 16:17:51 GMT","content-type":"application/json","content-length":"2","connection":"close","x-amzn-requestid":"ae417c82-d457-11e7-a6c9-4ba7ee3175f9","x-amz-date":"Tue, 28 Nov 2017 16:17:51 GMT","location":"/v0/skills/amzn1.ask.skill.547de95c-6e10-4cfd-b0c1-3d094b2e8dec/status","vary":"Accept-Encoding,User-Agent"}
+
+Response body: {}
+----------------------------------------
+[2017-11-28T16:17:51.892Z] - DEBUG - GET-SKILL-STATUS
+request-id: aec6b21c-d457-11e7-a6c9-4ba7ee3175f9
+GET https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.547de95c-6e10-4cfd-b0c1-3d094b2e8dec/status
+status code: 200 OK
+
+Request headers: {"User-Agent":"ask-cli/1.0.0-beta.5 Node/v8.9.0","Authorization":"Atza|IwEBIEaGyeu7mCbPwAtOruKIEkOFpLMHiB-pSKa5ubfy_Tm828KMLFDBnVW8eq7Zw5w0imdafYDpH752j-APexkXfxKChO-q6Hy-IkoTvmlsllkPIohb_Pnm7OxA3vrdYxkZGtqYZkAjfopyfIWkxd8uacDyfpsrGtcflELgLcJhlP9zuOrZyb75dY8YTxUJJtZOOBgElMetbIqDRPSYQ0dU4vfBBla2yHt3yLVVbdIbHnYmqkrFLntoScSWdpR4jgDcX8N0vemNO1iTq9x8pZP81LMJNBpLPS-C14wmmU4rr-VdY3kJ9YQaiwCD3Sedg4wWVFkrbKqgFzjdCTjc3A_woZYf_ce1hJfZVbBIQBBjJn4wULao2mrRjH2IUcEgwzyreQBRx7AA8GxPhpKZ7uU5u3ilbZbBVqK9Y0iMkyu3U1VaaddZpWdpas3C1JQcWO78IVe-0CHqteksGgKj6Eu536khbFzgzUiN5hxeGTKhGF3aiHfrKrdxPWIEufxuyT_j4Ad_326QWPF3gVc9BBNQA68wLXV9Z7JbBaIZ0pRqkWCyedBEmHBNzdCf0x7Rngu7Lfaa_611KYP_IoEpQ3X7V_mn4InrHaby_R1Uzj3auIcz9X2KbC1KJGVoe25W3UC7lJ4"}
+
+Response headers: {"server":"Server","date":"Tue, 28 Nov 2017 16:17:51 GMT","content-type":"application/json","content-length":"87","connection":"close","x-amzn-requestid":"aec6b21c-d457-11e7-a6c9-4ba7ee3175f9","x-amz-date":"Tue, 28 Nov 2017 16:17:51 GMT","vary":"Accept-Encoding,User-Agent"}
+
+Response body: "{\"manifest\":{\"lastModified\":{\"time\":\"2017-11-28T16:17:50.992Z\",\"status\":\"SUCCESSFUL\"}}}"
+----------------------------------------
+[2017-11-28T16:17:52.309Z] - DEBUG - GET-MODEL-STATUS
+request-id: af08eb41-d457-11e7-a6c9-4ba7ee3175f9
+GET https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.547de95c-6e10-4cfd-b0c1-3d094b2e8dec/interactionModel/locales/en-US/status
+status code: 200 OK
+
+Request headers: {"User-Agent":"ask-cli/1.0.0-beta.5 Node/v8.9.0","Authorization":"Atza|IwEBIEaGyeu7mCbPwAtOruKIEkOFpLMHiB-pSKa5ubfy_Tm828KMLFDBnVW8eq7Zw5w0imdafYDpH752j-APexkXfxKChO-q6Hy-IkoTvmlsllkPIohb_Pnm7OxA3vrdYxkZGtqYZkAjfopyfIWkxd8uacDyfpsrGtcflELgLcJhlP9zuOrZyb75dY8YTxUJJtZOOBgElMetbIqDRPSYQ0dU4vfBBla2yHt3yLVVbdIbHnYmqkrFLntoScSWdpR4jgDcX8N0vemNO1iTq9x8pZP81LMJNBpLPS-C14wmmU4rr-VdY3kJ9YQaiwCD3Sedg4wWVFkrbKqgFzjdCTjc3A_woZYf_ce1hJfZVbBIQBBjJn4wULao2mrRjH2IUcEgwzyreQBRx7AA8GxPhpKZ7uU5u3ilbZbBVqK9Y0iMkyu3U1VaaddZpWdpas3C1JQcWO78IVe-0CHqteksGgKj6Eu536khbFzgzUiN5hxeGTKhGF3aiHfrKrdxPWIEufxuyT_j4Ad_326QWPF3gVc9BBNQA68wLXV9Z7JbBaIZ0pRqkWCyedBEmHBNzdCf0x7Rngu7Lfaa_611KYP_IoEpQ3X7V_mn4InrHaby_R1Uzj3auIcz9X2KbC1KJGVoe25W3UC7lJ4"}
+
+Response headers: {"server":"Server","date":"Tue, 28 Nov 2017 16:17:52 GMT","content-type":"application/json","content-length":"20","connection":"close","x-amzn-requestid":"af08eb41-d457-11e7-a6c9-4ba7ee3175f9","x-amz-date":"Tue, 28 Nov 2017 16:17:52 GMT","vary":"Accept-Encoding,User-Agent"}
+
+Response body: "{\"status\":\"SUCCESS\"}"
+----------------------------------------
+[2017-11-28T16:17:52.754Z] - DEBUG - UPDATE-MODEL
+request-id: af4335e8-d457-11e7-a47e-87ee737ca523
+POST https://api.amazonalexa.com/v0/skills/amzn1.ask.skill.547de95c-6e10-4cfd-b0c1-3d094b2e8dec/interactionModel/locales/en-US
+status code: 400 Bad Request
+
+Request headers: {"User-Agent":"ask-cli/1.0.0-beta.5 Node/v8.9.0","Authorization":"Atza|IwEBIEaGyeu7mCbPwAtOruKIEkOFpLMHiB-pSKa5ubfy_Tm828KMLFDBnVW8eq7Zw5w0imdafYDpH752j-APexkXfxKChO-q6Hy-IkoTvmlsllkPIohb_Pnm7OxA3vrdYxkZGtqYZkAjfopyfIWkxd8uacDyfpsrGtcflELgLcJhlP9zuOrZyb75dY8YTxUJJtZOOBgElMetbIqDRPSYQ0dU4vfBBla2yHt3yLVVbdIbHnYmqkrFLntoScSWdpR4jgDcX8N0vemNO1iTq9x8pZP81LMJNBpLPS-C14wmmU4rr-VdY3kJ9YQaiwCD3Sedg4wWVFkrbKqgFzjdCTjc3A_woZYf_ce1hJfZVbBIQBBjJn4wULao2mrRjH2IUcEgwzyreQBRx7AA8GxPhpKZ7uU5u3ilbZbBVqK9Y0iMkyu3U1VaaddZpWdpas3C1JQcWO78IVe-0CHqteksGgKj6Eu536khbFzgzUiN5hxeGTKhGF3aiHfrKrdxPWIEufxuyT_j4Ad_326QWPF3gVc9BBNQA68wLXV9Z7JbBaIZ0pRqkWCyedBEmHBNzdCf0x7Rngu7Lfaa_611KYP_IoEpQ3X7V_mn4InrHaby_R1Uzj3auIcz9X2KbC1KJGVoe25W3UC7lJ4","accept":"application/json","content-type":"application/json","content-length":369}
+
+Request body: {"interactionModel":{"languageModel":{"invocationName":"sound quiz","types":[],"intents":[{"name":"AMAZON.CancelIntent","samples":[]},{"name":"AMAZON.HelpIntent","samples":[]},{"name":"AMAZON.StopIntent","samples":[]},{"name":"AnswerIntent","slots":[{"name":"Answer","type":"A_OR_B"}],"samples":["{Answer}","it's {Answer}","is it {Answer}","I think it's {Answer}"]}]}}}
+
+Response headers: {"server":"Server","date":"Tue, 28 Nov 2017 16:17:52 GMT","content-type":"application/json","content-length":"120","connection":"close","x-amzn-requestid":"af4335e8-d457-11e7-a47e-87ee737ca523","x-amz-date":"Tue, 28 Nov 2017 16:17:52 GMT","x-amzn-errortype":"BadRequestException:http://internal.amazon.com/coral/com.amazon.alexa.skillmanagement/","vary":"Accept-Encoding,User-Agent"}
+
+Response body: {"message":"The interaction model is not valid.","violations":[{"message":"model.type.name is unknown slot type name"}]}
+

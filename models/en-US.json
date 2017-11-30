@@ -1,0 +1,55 @@
+{
+    "interactionModel":{
+        "languageModel":{
+            "invocationName":"what's the sound",
+            "types":[
+              {
+                "values": [
+                  {
+                    "name": {
+                      "value": "a",
+                      "synonyms": ["aye", "ay", "eh"]
+                    }
+                  },
+                  {
+                    "name": {
+                      "value": "b",
+                      "synonyms": ["bee"]
+                    }
+                  }
+                ],
+                "name": "A_OR_B"
+              }
+            ],
+            "intents":[
+                {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+                },
+                {
+                  "name": "AnswerIntent",
+                  "slots": [
+                    {
+                      "name": "Answer",
+                      "type": "A_OR_B"
+                    }
+                  ],
+                  "samples":[
+                      "{Answer}",
+                      "it's {Answer}",
+                      "is it {Answer}",
+                      "I think it's {Answer}"
+                    ]
+                }
+            ]
+        }
+    }
+}
