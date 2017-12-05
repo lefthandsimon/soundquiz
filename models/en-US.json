@@ -3,23 +3,6 @@
         "languageModel":{
             "invocationName":"what's the sound",
             "types":[
-              {
-                "values": [
-                  {
-                    "name": {
-                      "value": "a",
-                      "synonyms": ["aye", "ay", "eh"]
-                    }
-                  },
-                  {
-                    "name": {
-                      "value": "b",
-                      "synonyms": ["bee"]
-                    }
-                  }
-                ],
-                "name": "A_OR_B"
-              }
             ],
             "intents":[
                 {
@@ -39,7 +22,7 @@
                   "slots": [
                     {
                       "name": "Answer",
-                      "type": "A_OR_B"
+                      "type": "AMAZON.NUMBER"
                     }
                   ],
                   "samples":[
@@ -47,6 +30,20 @@
                       "it's {Answer}",
                       "is it {Answer}",
                       "I think it's {Answer}"
+                    ]
+                },
+                {
+                  "name": "RepeatIntent",
+                  "slots": [
+                  ],
+                  "samples":[
+                      "repeat that",
+                      "repeat please",
+                      "can I hear it again",
+                      "again",
+                      "repeat",
+                      "one more time",
+                      "play it again"
                     ]
                 }
             ]
